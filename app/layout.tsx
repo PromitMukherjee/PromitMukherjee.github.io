@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import JsonLd from "@/components/JsonLd";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -24,10 +25,15 @@ export const metadata: Metadata = {
     "Memory-Efficient Algorithms",
   ],
   authors: [{ name: "Promit Mukherjee" }],
+  alternates: {
+    canonical: "https://PromitMukherjee.github.io",
+  },
   openGraph: {
-    title: "Promit Mukherjee — AI Researcher & Systems Builder",
+    title: "Promit Mukherjee — AI / ML Researcher & Systems Builder",
     description:
-      "Exploring how intelligent systems can learn, reason, and operate across healthcare, biology, and large-scale computing.",
+      "Portfolio of Promit Mukherjee, AI / ML Researcher & Systems Builder exploring machine learning, computer vision, representation learning, algorithms, and systems.",
+    url: "https://PromitMukherjee.github.io",
+    siteName: "Promit Mukherjee Portfolio",
     type: "website",
     locale: "en_US",
     images: [
@@ -35,15 +41,15 @@ export const metadata: Metadata = {
         url: "/profile/promit_image.png",
         width: 1200,
         height: 630,
-        alt: "Promit Mukherjee",
+        alt: "Promit Mukherjee — AI / ML Researcher & Systems Builder",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Promit Mukherjee — AI Researcher & Systems Builder",
+    title: "Promit Mukherjee — AI / ML Researcher & Systems Builder",
     description:
-      "Exploring how intelligent systems can learn, reason, and operate across healthcare, biology, and large-scale computing.",
+      "Portfolio of Promit Mukherjee, AI / ML Researcher & Systems Builder exploring machine learning, computer vision, representation learning, algorithms, and systems.",
     images: ["/profile/promit_image.png"],
   },
   robots: {
@@ -60,6 +66,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable}`}>
       <body className="bg-ivory-100 text-espresso-900 font-sans antialiased selection:bg-burgundy-800 selection:text-ivory-50">
+        <JsonLd />
         {children}
       </body>
     </html>
