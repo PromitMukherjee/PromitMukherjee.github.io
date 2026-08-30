@@ -1,0 +1,54 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root {
+  --bg-primary: #FAF9F6;
+  --bg-secondary: #F8F7F4;
+  --text-primary: #201C1A;
+  --text-secondary: #6B625D;
+  --accent-burgundy: #7A1C2E;
+  --border-color: #E7E2DE;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+body {
+  background-color: #FAF9F6;
+  color: #201C1A;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: #7A1C2E;
+  color: #FFFFFF;
+}
+
+/* Hairline Editorial Borders */
+.border-editorial {
+  border-color: #E7E2DE;
+}
+
+/* Subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF9F6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D8D3CD;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7A1C2E;
+}
