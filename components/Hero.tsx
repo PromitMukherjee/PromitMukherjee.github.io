@@ -30,10 +30,10 @@ export default function Hero() {
             className="lg:col-span-7 flex flex-col space-y-7"
           >
             {/* Title: PROMIT MUKHERJEE */}
-            <div className="space-y-0 text-espresso-900 font-bold tracking-tight text-6xl sm:text-7xl lg:text-8xl leading-[0.93]">
-              <h1>PROMIT</h1>
-              <h1>MUKHERJEE</h1>
-            </div>
+            <h1 className="space-y-0 text-espresso-900 font-bold tracking-tight text-6xl sm:text-7xl lg:text-8xl leading-[0.93]">
+              <span className="block">PROMIT</span>
+              <span className="block">MUKHERJEE</span>
+            </h1>
 
             {/* Role Subtitle */}
             <div className="text-xs sm:text-sm font-mono uppercase tracking-[0.2em] text-burgundy-800 font-bold block">
